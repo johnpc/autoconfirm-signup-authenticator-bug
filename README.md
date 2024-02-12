@@ -8,13 +8,17 @@ This is a demo repo showing issues with the Authenticator component combined wit
 
 Live demo is availble (for now) at: [https://main.d1q2mvk8vhrxl0.amplifyapp.com](https://main.d1q2mvk8vhrxl0.amplifyapp.com).
 
-## Authenticator UI Error
+## Setup
 
 ```bash
+git clone https://github.com/johnpc/autoconfirm-signup-authenticator-bug
+cd autoconfirm-signup-authenticator-bug
 npm install # Install node dependencies
 npx amplify sandbox # Deploy backend resources
 npm run dev # Start nextjs server
 ```
+
+## Authenticator UI Error
 
 Open [http://localhost:3000](http://localhost:3000) with your browser. You will see the Authenticator component.
 
