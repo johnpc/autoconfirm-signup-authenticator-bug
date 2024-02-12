@@ -2,9 +2,9 @@
 
 This is a demo repo showing issues with the Authenticator component combined with a preSignUp lamba trigger.
 
-```javascript
-event.response.autoConfirmUser = true;
-```
+1. If using `autoConfirmUser` in preSignUp, you get "stuck" in the authenticator component after signing up
+2. The preSignUp lambda executes twice (apparently to due to `OPTIONS` and `POST` calls) which is dangerous as setup-y stuff is only supposed to happen once
+3. The preSignUp lambda will always time out unless `context.callbackWaitsForEmptyEventLoop = false;` is set in the lambda
 
 Live demo is availble (for now) at: [https://main.d1q2mvk8vhrxl0.amplifyapp.com](https://main.d1q2mvk8vhrxl0.amplifyapp.com).
 
