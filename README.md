@@ -6,6 +6,8 @@ This is a demo repo showing issues with the Authenticator component combined wit
 event.response.autoConfirmUser = true;
 ```
 
+Live demo is availble (for now) at: [https://main.d1q2mvk8vhrxl0.amplifyapp.com](https://main.d1q2mvk8vhrxl0.amplifyapp.com).
+
 ## Authenticator UI Error
 
 ```bash
