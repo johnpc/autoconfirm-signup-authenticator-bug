@@ -28,13 +28,15 @@ Open [http://localhost:3000](http://localhost:3000) with your browser. You will 
 
 ![screenshot of error](error.png)
 
-## Lambda Trigger Runs Twice Error
+## ~Lambda Trigger Runs Twice Error~
 
-After attempting sign up, visit your lambda trigger logs in CloudWatch. You see two invocations of the pre sign up trigger, even though you only signed up once.
+**NOTE**: I can no longer reproduce this. I may have been hallucinating.
 
-This appears to be because both the OPTIONS call and the POST call result in the pre signup trigger being invoked.
+~After attempting sign up, visit your lambda trigger logs in CloudWatch. You see two invocations of the pre sign up trigger, even though you only signed up once.~
 
-This is dangerous, because presignup triggers are often used to set up data in the database, and running that setup twice in a row can result in unexpected behavior.
+~This appears to be because both the OPTIONS call and the POST call result in the pre signup trigger being invoked.~
+
+~This is dangerous, because presignup triggers are often used to set up data in the database, and running that setup twice in a row can result in unexpected behavior.~
 
 ## Lambda trigger does not have empty event loop by default
 
