@@ -2,6 +2,7 @@ import { defineAuth, defineFunction } from '@aws-amplify/backend';
 const preSignUp = defineFunction({
   entry: "./pre-sign-up-handler.ts",
   runtime: 18,
+  timeoutSeconds: 5,
 });
 /**
  * Define and configure your auth resource
